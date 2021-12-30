@@ -81,4 +81,12 @@ partidoFinal.forEach(partido => {
     partido.jugarPartido();
 })
 
+const equipoGanador = [];
+for (const partido of partidoFinal) {
+    const ganador = partido.getGanador();
+    equipoGanador.push(ganador.name);
+};
+
+console.log(`\nEl ganador de la Eurocopa ha sido ${equipoGanador}!!\n `)
+
 console.log('\n')
